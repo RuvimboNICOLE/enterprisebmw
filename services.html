@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise BMW - Customer Services</title>
+    <link rel="icon" type="image/jpeg" href="Images/logo.jfif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Enterprise BMW</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listings.html">Approved Listings</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Customer Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="customer-services">
+    <section class="hero1">
+        <div class="hero-overlay1">
+            <h1>Customer Services</h1>
+            <p>At Enterprise BMW, we prioritize our customers. Here are some of the services we offer:</p>
+            <ul class="services-list">
+                <li>24/7 Roadside Assistance</li>
+                <li>Free Vehicle Inspections</li>
+                <li>Loaner Vehicles</li>
+                <li>Customer Loyalty Programs</li>
+                <li>Online Appointment Scheduling</li>
+            </ul>
+            <button onclick="window.open('https://wa.me/263774228450', '_blank')" class="book-appointment-btn whatsapp-btn">
+                <img src="Images/whatsapp icon.png" alt="WhatsApp" style="width: 20px; height: 20px; margin-right: 8px;">
+                Book Appointment via WhatsApp
+            </button>
+        </div>
+    </section>
+</section>
+
+    <div class="floating-contact-container">
+        <button type="button" class="bubble-contact-btn" onclick="toggleContactMenu()">
+            <i class="fab fa-whatsapp"></i>
+            <span>Chat with us</span>
+        </button>
+        
+        <div id="contact-menu" class="wa-window-hidden" style="display: none;">
+            <div class="wa-header">
+                <div class="wa-avatar">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA">
+                </div>
+                <div class="wa-chat-info">
+                    <span class="wa-name">Enterprise BMW Support</span>
+                    <span class="wa-status">Online</span>
+                </div>
+                <button onclick="toggleContactMenu()" class="wa-close">&times;</button>
+            </div>
+
+            <div class="wa-chat-body">
+                <div class="wa-msg">
+                    Welcome to Enterprise BMW! 🚗<br>
+                    How can we help you with your vehicle today?
+                    <span class="wa-time">Just now</span>
+                </div>
+            </div>
+
+            <div class="wa-footer">
+                <p class="wa-instruction">Select a representative to start chat:</p>
+                <div class="wa-rep-list">
+                    <button class="rep-btn" onclick="openWA('263783953711')">
+                        <i class="fas fa-user-circle"></i> Support 1 (+263 783 953 711)
+                    </button>
+                    <button class="rep-btn" onclick="openWA('263785904410')">
+                        <i class="fas fa-user-circle"></i> Support 2 (+263 785 904 410)
+                    </button>
+                </div>
+                <a href="tel:+263774123444" class="wa-call-link">
+                    <i class="fas fa-phone"></i> Or Call: +263 774 123 444
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="listings.html">Approved Listings</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Customer Services</a>
+            </div>
+            <div class="footer-contact">
+                <div><i class="fas fa-phone-alt"></i> +263 77 422 8450</div>
+                <div>
+                    <a href="mailto:info@enterprisebmw.net" style="color: inherit; text-decoration: none;">
+                        <i class="fas fa-envelope"></i> info@enterprisebmw.net
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            Copyright © 2026 Enterprise BMW
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

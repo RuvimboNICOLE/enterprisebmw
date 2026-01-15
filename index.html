@@ -1,0 +1,127 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise BMW - Home</title>
+    <link rel="icon" type="image/jpeg" href="Images/logo.jfif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="logo">Enterprise BMW</div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="listings.html">Approved Listings</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Customer Services</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>Welcome to Enterprise BMW</h1>
+            <p>Premium Vehicle Maintenance & Diagnostics</p>
+            <button onclick="openAppointmentModal()" class="hero-btn">Book Appointment</button>
+        </div>
+    </section>
+
+    <section class="services-overview">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <img src="Images/enginerep.jfif" alt="Engine Repair">
+                <h3>Vehicle Diagnostics</h3>
+                <p>Expert diagnostics for all BMW engines.</p>
+            </div>
+            <div class="service-item">
+                <img src="Images/brake.jfif" alt="Brake Service">
+                <h3>Brake Service</h3>
+                <p>High-performance brake systems for safety and performance.</p>
+            </div>
+            <div class="service-item">
+                <img src="Images/maintenance.jfif" alt="Maintenance">
+                <h3>Maintenance</h3>
+                <p>Regular check-ups and maintenance to keep your BMW running smoothly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-us">
+        <div class="why-choose-overlay">
+            <h2>Why Choose Enterprise BMW</h2>
+            <p>Because we have qualified technicians who provide premium vehicle maintenance and diagnostics for all BMW models.</p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="listings.html">Approved Listings</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Customer Services</a>
+            </div>
+            <div class="footer-contact">
+    <div>
+        <i class="fas fa-phone-alt"></i> +263 77 422 8450
+    </div>
+    <div>
+        <a href="mailto:info@enterprisebmw.net" style="color: inherit; text-decoration: none;">
+            <i class="fas fa-envelope"></i> info@enterprisebmw.net
+        </a>
+    </div>
+    <div>
+        <a href="https://www.instagram.com/enterprisebmw" target="_blank" style="color: inherit; text-decoration: none;">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+    <div>
+        <a href="https://www.facebook.com/Enterprisebmwservices" target="_blank" style="color: inherit; text-decoration: none;">
+            <i class="fab fa-facebook"></i>
+        </a>
+    </div>
+</div>
+
+        </div>
+
+        <div class="footer-bottom">
+            Copyright © 2026 Enterprise BMW
+        </div>
+    </footer>
+
+
+    <!-- Appointment Modal -->
+    <div id="appointment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Book Appointment Online</h2>
+            <form id="appointment-form" action="https://formspree.io/f/xkoogzod" method="POST">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" name="phone-number" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="preferred-date">Preferred Date:</label>
+                <input type="date" id="preferred-date" name="preferred-date" required>
+
+                <label for="preferred-time">Preferred Time:</label>
+                <input type="time" id="preferred-time" name="preferred-time" required>
+
+                <button type="submit">Submit Appointment</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

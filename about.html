@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise BMW - About</title>
+    <link rel="icon" type="image/jpeg" href="Images/logo.jfif">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Enterprise BMW</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listings.html">Approved Listings</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Customer Services</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about">
+        <h1>About Enterprise BMW</h1>
+        <p> At Enterprise BMW, we are committed to keeping your vehicle safe, reliable, and running at its best. With experienced technicians, modern diagnostic tools, and honest service, we deliver quality repairs you can trust. Your safety and satisfaction are always our top priorities..</p>
+        
+    </section>
+
+    <div class="map-contact-container">
+        <section class="location-map">
+            <h2>Our location:</h2>
+            <p><strong>Location:</strong> 42A Enterprise Road, Harare, Zimbabwe</p>
+            <iframe src="https://maps.google.com/maps?q=42A%20Enterprise%20Road%2C%20Harare%2C%20Zimbabwe&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+
+        <section class="contact-us">
+            <h2>Don't hesitate to reach out</h2>
+            <form id="contact-form" action="https://formspree.io/f/xdaakdkz" method="POST">
+                <div class="name-phone-row">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="listings.html">Approved Listings</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Customer Services</a>
+            </div>
+            <div class="footer-contact">
+    <div>
+        <i class="fas fa-phone-alt"></i> +263 77 422 8450
+    </div>
+    <div>
+        <a href="mailto:info@enterprisebmw.net" style="color: inherit; text-decoration: none;">
+            <i class="fas fa-envelope"></i> info@enterprisebmw.net
+        </a>
+    </div>
+    <div>
+        <a href="https://www.instagram.com/enterprisebmw" target="_blank" style="color: inherit; text-decoration: none;">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+    <div>
+        <a href="https://www.facebook.com/Enterprisebmwservices" target="_blank" style="color: inherit; text-decoration: none;">
+            <i class="fab fa-facebook"></i>
+        </a>
+    </div>
+</div>
+
+        </div>
+
+        <div class="footer-bottom">
+            Copyright © 2026 Enterprise BMW
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
